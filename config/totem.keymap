@@ -176,7 +176,7 @@ label= "ADJ"                               ;
                                     &kp TAB     &kp Q       &kp W       &kp T      &kp KP_N1          &trans      &trans      &trans      &trans      &trans
                                     &kp LSHFT   &kp A       &kp S       &kp D      &kp KP_N2          &trans      &trans      &trans      &trans      &trans  
                         &kp ESC     &kp LCTRL   &kp Z       &kp X       &kp C      &kp KP_N3          &trans      &trans      &trans      &trans      &trans     &trans         
-                                                            &trans      &lt GAME_NUM &kp SPACE        &trans      &trans      &trans>;
+                                                            &trans      &mo GAME_NUM &kp SPACE        &trans      &trans      &trans>;
                 };
         };
 };
