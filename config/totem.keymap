@@ -61,14 +61,6 @@
         };
     };
 
-    behaviors {
-        ctr_r: t_r {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp R>;
-            mods = <(MOD_LSFT|MOD_LCTL)>;
-        };
-    };
 
 
     keymap {
@@ -192,7 +184,7 @@ label= "ADJ"                               ;
 
                     label= "GAME";
                     bindings = <
-                &kp TAB     &kp Q       &kp W       &ctr_r      &kp N1          &trans      &trans      &trans      &trans      &trans
+                &kp TAB     &kp Q       &kp W       &kp T      &kp N1          &trans      &trans      &trans      &trans      &trans
                 &kp LSHFT   &kp A       &kp S       &kp D      &kp N2          &trans      &trans      &trans      &trans      &trans  
     &kp ESC     &kp LCTRL   &kp Z       &kp X       &kp C      &kp N3          &trans      &trans      &trans      &trans      &trans     &trans         
                                         &trans      &mo GAME_NUM &kp SPACE        &trans      &trans      &trans>;
@@ -202,7 +194,7 @@ label= "ADJ"                               ;
 
 
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃           ┃           ┃     4     ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┃           ┃           ┃           ┃     R     ┃     4     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃           ┃           ┃           ┃     5     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -213,7 +205,7 @@ label= "ADJ"                               ;
                 game_num_layer {
                     label= "GAME_NUM";
                     bindings = <
-                &trans       &trans      &trans      &trans      &kp N4       &trans      &trans      &trans      &trans      &trans
+                &trans       &trans      &trans      &kp R      &kp N4       &trans      &trans      &trans      &trans      &trans
                 &trans       &trans      &trans      &trans      &kp N5       &trans      &trans      &trans      &trans      &trans  
     &trans      &trans       &trans      &trans      &trans      &kp N6       &trans      &trans      &trans      &trans      &trans     &trans         
                                             &trans      &trans      &trans          &trans      &trans      &trans      
