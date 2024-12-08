@@ -102,7 +102,7 @@ label= "NAVI"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   SHIFT   ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4 $   ┃     5 %   ┃     6 ^   ┃     -_    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃   P UP    ┃  C LOCK   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     1 !   ┃     2 @   ┃     3 #   ┃     \ ┃   ┃    `      ┃
+// ┃           ┃   C LOCK  ┃   P UP    ┃    DOWN   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     1 !   ┃     2 @   ┃     3 #   ┃     \ ┃   ┃    `      ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃    TAB    ┃    SPC    ┃   ┃    ADJ    ┃     0  )  ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -111,7 +111,7 @@ label= "NAVI"                              ;
 
                 &kp ESC     &kp HOME    &kp UP      &kp END     &kp LBRC        &kp RBRC    &kp N7       &kp N8       &kp N9      &kp EQUAL
                 &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp LBKT        &kp RBKT    &mt RSHFT N4 &mt RCTRL N5 &mt RALT N6 &mt RGUI MINUS
-    &trans      &trans      &kp PG_UP   &kp CAPS    &kp PG_DN   &kp LPAR        &kp RPAR    &kp N1       &kp N2       &kp N3      &kp BSLH    &kp GRAVE     
+    &trans      &kp CAPS    &kp PG_UP   &kp DOWN    &kp PG_DN   &kp LPAR        &kp RPAR    &kp N1       &kp N2       &kp N3      &kp BSLH    &kp GRAVE     
                                         &trans      &kp TAB     &kp SPACE       &mo ADJ     &kp N0       &trans     
                         >;
                 };
