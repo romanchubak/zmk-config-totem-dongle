@@ -90,7 +90,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI SEMI
-    &kp Z       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp SQT
+    &lt MAUSE Z &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp SQT
                                         &kp DEL   &lt MAUSE TAB &lt NAV SPACE   &lt SYM RET &kp ESC    &kp BSPC
                         >;
                 };
@@ -236,7 +236,7 @@ label= "ADJ"                               ;
                    &trans       &trans  &msc SCRL_UP  &trans      &trans         &trans      &trans   &mmv MOVE_UP  &trans      &trans
                    &trans  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &trans  &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  
        &trans      &trans       &trans  &msc SCRL_DOWN  &trans      &trans       &trans      &trans   &mmv MOVE_DOWN &trans      &trans     &trans         
-                                            &trans      &trans      &trans       &mkp LCLK  &mkp MCLK  &mkp RCLK      
+                                        &mkp RCLK       &mkp MCLK   &mkp LCLK    &mkp LCLK   &mkp MCLK  &mkp RCLK      
                         >;
                 };
 
