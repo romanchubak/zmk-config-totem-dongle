@@ -233,10 +233,10 @@ label= "ADJ"                               ;
                 mouse {
                     label= "MAUSE";
                     bindings = <
-                   &trans       &trans  &msc SCRL_UP  &trans      &trans         &trans      &trans   &mmv MOVE_UP  &trans      &trans
-                   &trans  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &trans  &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  
-       &trans      &trans       &trans  &msc SCRL_DOWN  &trans      &trans       &trans      &trans   &mmv MOVE_DOWN &trans      &trans     &trans         
-                                        &mkp RCLK       &mkp MCLK   &mkp LCLK    &mkp LCLK   &mkp MCLK  &mkp RCLK      
+                   &trans       &trans   &trans       &trans     &msc SCRL_UP      &trans      &trans   &mmv MOVE_UP  &trans      &trans
+                   &trans       &kp LALT &kp LCTRL    &kp LSHFT  &msc SCRL_DOWN    &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans  
+       &trans      &trans       &trans   &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT   &trans      &trans   &mmv MOVE_DOWN &trans      &trans     &trans         
+                                         &mkp RCLK    &mkp MCLK  &mkp LCLK         &mkp LCLK   &mkp MCLK  &mkp RCLK      
                         >;
                 };
 
