@@ -178,20 +178,20 @@ label= "ADJ"                               ;
                 
                 game_layer {
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃    TAB    ┃     Q     ┃     W     ┃     T     ┃     1     ┃   ┃           ┃           ┃  SCRL_UP  ┃           ┃           ┃
+//             ┃    TAB    ┃     Q     ┃     W     ┃     T     ┃     1     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃   SHIFT   ┃     A     ┃     S     ┃     D     ┃     2     ┃   ┃           ┃    LCLK   ┃ SCRL_DOWN ┃    RCLK   ┃           ┃
+//             ┃   SHIFT   ┃     A     ┃     S     ┃     D     ┃     2     ┃   ┃           ┃    LCLK   ┃  SCRL_UP  ┃    RCLK   ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃     ESC   ┃   CTRL    ┃     Z     ┃     X     ┃     C     ┃     3     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┃     ESC   ┃   CTRL    ┃     Z     ┃     X     ┃     C     ┃     3     ┃   ┃           ┃           ┃ SCRL_DOWN ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃ GAME_NUM  ┃   SPACE   ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
                     label= "GAME";
                     bindings = <
-                &kp TAB     &kp Q       &kp W       &kp T      &kp N1             &trans      &trans     &msc SCRL_UP    &trans      &trans
-                &kp LSHFT   &kp A       &kp S       &kp D      &kp N2             &trans      &mkp LCLK  &msc SCRL_DOWN &mkp RCLK      &trans  
-    &kp ESC     &kp LCTRL   &kp Z       &kp X       &kp C      &kp N3             &trans      &trans      &trans      &trans      &trans     &trans         
+                &kp TAB     &kp Q       &kp W       &kp T      &kp N1             &trans      &trans     &trans    &trans      &trans
+                &kp LSHFT   &kp A       &kp S       &kp D      &kp N2             &trans      &mkp LCLK  &msc SCRL_UP &mkp RCLK      &trans  
+    &kp ESC     &kp LCTRL   &kp Z       &kp X       &kp C      &kp N3             &trans      &trans     &msc SCRL_DOWN  &trans      &trans     &trans         
                                         &trans      &mo GAME_NUM &kp SPACE        &trans      &trans      &trans>;
                 };
 
