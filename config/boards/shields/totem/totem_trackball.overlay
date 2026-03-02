@@ -10,8 +10,3 @@
     };
 };
 
-&zmk_pointing {
-    compatible = "zmk,pointing";
-    status = "okay";
-    input = <&pmw3360>;
-};
