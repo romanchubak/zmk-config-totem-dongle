@@ -1,14 +1,5 @@
 #include "totem.dtsi"
 
-&kscan0 {
-    compatible = "zmk,kscan-gpio-matrix";
-    row-gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;   /* dummy row */
-    col-gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>;   /* dummy col */
-    status = "disabled";
-};
-
-
-
 &pinctrl {
     spi1_default: spi1_default {
         group1 {
