@@ -1,5 +1,12 @@
 
 /* trackball has no keys */
+
+&default_transform {
+   compatible = "zmk,matrix-transform";
+   columns = <0>;
+   rows = <0>;
+};
+
 &kscan0 {
     status = "disabled";
 };
