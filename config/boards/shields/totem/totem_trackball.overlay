@@ -1,14 +1,5 @@
 #include "totem.dtsi"
 
-&default_transform {
-};
-
-&kscan0 {
-    compatible = "zmk,matrix-transform";
-    rows = <0>;
-    columns = <0>;
-    status = "disabled";
-};
 
 &pinctrl {
     spi1_default: spi1_default {
