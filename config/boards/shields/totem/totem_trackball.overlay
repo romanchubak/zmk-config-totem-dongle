@@ -1,6 +1,9 @@
 
 /* trackball has no keys */
 
+&default_transform {
+};
+
 &kscan0 {
     compatible = "zmk,matrix-transform";
     rows = <0>;
