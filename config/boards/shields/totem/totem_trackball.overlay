@@ -1,19 +1,10 @@
 #include "totem.dtsi"
 
-
-/ {
-    /* Dummy GPIO node to satisfy ZMK bindings */
-    dummy_gpio: gpio_dummy {
-        compatible = "gpio-keys";
-        gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
-    };
-
-    kscan0: kscan_0 {
-        compatible = "zmk,kscan-gpio-matrix";
-        row-gpios = <&dummy_gpio 0>;  /* must reference a valid phandle + number */
-        col-gpios = <&dummy_gpio 0>;  /* must reference a valid phandle + number */
-        status = "disabled";
-    };
+&kscan0 {
+    compatible = "zmk,kscan-gpio-matrix";
+    row-gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;   /* dummy row */
+    col-gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>;   /* dummy col */
+    status = "disabled";
 };
 
 
