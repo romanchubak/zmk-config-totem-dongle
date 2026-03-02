@@ -1,5 +1,4 @@
-
-/* trackball has no keys */
+#include "totem.dtsi"
 
 &default_transform {
 };
