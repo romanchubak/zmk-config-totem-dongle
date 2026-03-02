@@ -1,3 +1,9 @@
+
+/* trackball has no keys */
+&kscan0 {
+    status = "disabled";
+};
+
 &pinctrl {
     spi1_default: spi1_default {
         group1 {
