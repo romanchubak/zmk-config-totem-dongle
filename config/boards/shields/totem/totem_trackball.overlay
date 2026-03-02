@@ -1,6 +1,11 @@
 #include "totem.dtsi"
 
 
+&kscan0 {
+    col-gpios = <>;
+};
+
+
 &pinctrl {
     spi1_default: spi1_default {
         group1 {
