@@ -1,17 +1,10 @@
 
 /* trackball has no keys */
 
-/dts-v1/;
-
-/ {
-    dummy_transform: matrix_transform {
-        compatible = "zmk,matrix-transform";
-        rows = <0>;
-        columns = <0>;
-    };
-};
-
 &kscan0 {
+    compatible = "zmk,matrix-transform";
+    rows = <0>;
+    columns = <0>;
     status = "disabled";
 };
 
