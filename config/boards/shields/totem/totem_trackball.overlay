@@ -1,0 +1,17 @@
+&spi1 {
+    status = "okay";
+    cs-gpios = <&xiao_d 2 GPIO_ACTIVE_LOW>;
+
+    pmw3360: pmw3360@0 {
+        compatible = "pixart,pmw3360";
+        reg = <0>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&xiao_d 3 GPIO_ACTIVE_HIGH>;
+    };
+};
+
+&zmk_pointing {
+    compatible = "zmk,pointing";
+    status = "okay";
+    input = <&pmw3360>;
+};
