@@ -1,21 +1,12 @@
-# This file generates the GitHub Actions matrix
-# For simple board + shield combinations, add them
-# to the top level board and shield arrays, for more
-# control, add individual board + shield combinations to
-# the `include` property, e.g:
-#
 ---
-on: [workflow_dispatch]
-
-jobs:
-  build:
-    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@core/zephyr-3.5-update
-    with:
-    include: >
-      [
-        { "board": "seeeduino_xiao_ble", "shield": "totem_left" },
-        { "board": "seeeduino_xiao_ble", "shield": "totem_right" },
-        { "board": "seeeduino_xiao_ble", "shield": "totem_dongle" },
-        { "board": "seeeduino_xiao_ble", "shield": "totem_trackball" },
-        { "board": "seeeduino_xiao_ble", "shield": "settings_reset" }
-      ]
+include:
+  - board: seeeduino_xiao_ble
+    shield: totem_left
+  - board: seeeduino_xiao_ble
+    shield: totem_right
+  - board: seeeduino_xiao_ble
+    shield: totem_dongle
+  - board: seeeduino_xiao_ble
+    shield: totem_trackball
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
