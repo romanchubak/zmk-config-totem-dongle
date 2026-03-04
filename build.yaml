@@ -1,5 +1,3 @@
-name: Build ZMK
-
 on:
   workflow_dispatch:
 
