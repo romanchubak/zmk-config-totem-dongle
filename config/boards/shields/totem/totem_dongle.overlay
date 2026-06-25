@@ -1,5 +1,10 @@
 #include "totem.dtsi"
 #include <input/processors.dtsi>
+#include "input-split.dtsi"
+
+&trackball_split_listener {
+	status = "okay";
+};
 
 &kscan0 {
     col-gpios
