@@ -56,3 +56,28 @@
 
 	input-processors = <&zip_x_scaler 2 1>;
 };
+
+
+&default_transform {
+    row-offset = <4>;
+};
+
+/ {
+	chosen {
+		zmk,kscan = &kscan0;
+	};
+
+    kscan0: kscan_0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+
+		col-gpios
+			= <&xiao_d 3 GPIO_ACTIVE_HIGH>
+			;
+
+		row-gpios
+			= <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			;
+		};
+ 
+};
