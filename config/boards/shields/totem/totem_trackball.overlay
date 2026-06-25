@@ -38,9 +38,9 @@
 		status = "okay";
         compatible = "pixart,pmw3610-alt";
         reg = <0>;
-        spi-max-frequency = <5000000>;
+        spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		cpi = <1200>;
+		cpi = <600>;
 
 		invert-y;
         evt-type = <INPUT_EV_REL>;
