@@ -1,4 +1,4 @@
-// #include "totem.dtsi"
+#include "totem.dtsi"
 #include "pmw3610.dtsi"
 #include "split_input.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
@@ -27,16 +27,8 @@
 //     //     status = "okay";
 //     // };
 // };
-
 /{
-	chosen {
-        zmk,kscan = &mock_kscan;
-    };
-
-    mock_kscan: kscan_1 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
+    chosen {
+        zmk,matrix-transform = &default_transform;
     };
 };
