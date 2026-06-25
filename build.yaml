@@ -1,18 +1,4 @@
 include:
-  # - board: seeeduino_xiao_ble
-    # shield: tdtsk_central
-  # - board: seeeduino_xiao_ble
-    # shield: tdtsk_trackball
-  # - board: seeeduino_xiao_ble
-  #   shield: settings_reset
-  # - board: seeeduino_xiao_ble
-  #   shield: totem_trackball
-  # - board: seeeduino_xiao_ble
-  #   shield: totem_dongle
-  # - board: seeeduino_xiao_ble
-  #   shield: totem_left
-  # - board: seeeduino_xiao_ble
-  #   shield: totem_right
   - board: xiao_ble//zmk
     shield: settings_reset
   - board: xiao_ble//zmk
