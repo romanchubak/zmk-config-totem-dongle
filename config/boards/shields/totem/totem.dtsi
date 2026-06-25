@@ -5,6 +5,11 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "input-split.dtsi"
+
+&trackball_split_listener {
+	status = "okay";
+};
 
 / {
     chosen {

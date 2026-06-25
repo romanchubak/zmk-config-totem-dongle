@@ -37,9 +37,6 @@
         spi-max-frequency = <1000000>;
         irq-gpios = <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 		cpi = <1200>;
-        // swap-xy; /* optional */
-        // invert-x; /* optional */
-        // invert-y; /* optional */
 
 		invert-y;
         evt-type = <INPUT_EV_REL>;
@@ -47,43 +44,13 @@
         y-input-code = <INPUT_REL_Y>;
 
         force-awake;
-        /* keep the sensor awake while ZMK activity state is ACTIVE,
-           fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
-           thus, the sensor would be a `wakeup-source` */
-
-        // force-awake-4ms-mode;
-        /* while force-awake is acitvated, enable this mode to force sampling per 
-           4ms, where the default sampling rate is 8ms. */
-        /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
     };
 };
 
 
+&trackball_split_input {
+	device = <&trackball>;
 
-/{
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
-    };
-
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-direct";
-        input-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        status = "okay";
-    };
-
-    default_transform: matrix_transform {
-        compatible = "zmk,matrix-transform";
-        rows = <1>;
-        columns = <1>;
-        map = <RC(0,0)>;
-    };
-
-	trackball_listener: trackball_listener {
-		compatible = "zmk,input-listener";
-		device = <&trackball>;
-		status = "okay";
-		input-processors = <&zip_x_scaler 2 1>;
-	};
+	input-processors = <&zip_x_scaler 2 1>;
 };
 
