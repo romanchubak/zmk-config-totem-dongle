@@ -1,10 +1,12 @@
-/*
- * Copyright (c) 2024 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include "totem.dtsi"
+#include "split_input.dtsi"
+#include <input/processors.dtsi>
+
+
+&trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
+    status = "okay";
+    input-processors = <&zip_x_scaler 2 1>;
+};
 
 &kscan0 {
     col-gpios
