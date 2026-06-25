@@ -39,7 +39,7 @@
         reg = <0>;
         spi-max-frequency = <1000000>;
         irq-gpios = <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		cpi = <1200>;
+		cpi = <600>;
 
 		invert-y;
         evt-type = <INPUT_EV_REL>;
@@ -55,6 +55,10 @@
 	device = <&trackball>;
 
 	input-processors = <&zip_x_scaler 2 1>;
+};
+
+&default_transform {
+    col-offset = <10>;
 };
 
 &kscan0 {
