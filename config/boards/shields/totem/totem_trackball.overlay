@@ -29,14 +29,14 @@
 // };
 
 /{
-    chosen {
-        zmk,matrix-transform = &default_transform;
+	chosen {
+        zmk,kscan = &mock_kscan;
     };
 
-    default_transform: matrix_transform {
-        compatible = "zmk,matrix-transform";
-        rows = <1>;
-        columns = <1>;
-        map = <RC(0,0)>;
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
     };
 };
