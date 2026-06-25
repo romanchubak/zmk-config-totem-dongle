@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/ak66666
     - name: nuovotaka
       url-base: https://github.com/nuovotaka
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
 
   projects:
     - name: zmk
@@ -19,9 +17,6 @@ manifest:
       revision: main
     - name: zmk-pointing-acceleration-alpha
       remote: nuovotaka
-      revision: main
-    - name: cirque-input-module
-      remote: petejohanson
       revision: main
 
   self:
