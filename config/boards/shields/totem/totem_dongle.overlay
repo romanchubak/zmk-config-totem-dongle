@@ -3,6 +3,8 @@
 #include "input-split.dtsi"
 #include "totem-layouts.dtsi"
 #include <behaviors/input_gestures_accel.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include <dt-bindings/zmk/behaviors.h>
 
 &pointer_accel { // this needs to be put BEFORE input-listener
     input-type = <INPUT_EV_REL>;
