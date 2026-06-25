@@ -2,7 +2,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include "input-split.dtsi"
-#include "totem.dtsi"
+// #include "totem.dtsi"
 
 
 &pinctrl {
@@ -56,4 +56,3 @@
 
 	input-processors = <&zip_x_scaler 2 1>;
 };
-
