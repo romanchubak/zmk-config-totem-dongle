@@ -58,7 +58,7 @@
 };
 
 &default_transform {
-    col-offset = <11>;
+    col-offset = <10>;
     row-offset = <4>;
 };
 
