@@ -2,6 +2,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
 #include "input-split.dtsi"
+#include "totem.dtsi"
 
 &pinctrl {
     spi0_default: spi0_default {
