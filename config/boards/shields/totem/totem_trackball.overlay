@@ -57,13 +57,3 @@
 	input-processors = <&zip_x_scaler 2 1>;
 };
 
-&default_transform {
-    col-offset = <10>;
-    row-offset = <4>;
-};
-
-&kscan0 {
-    col-gpios
-        = <&xiao_d 3 GPIO_ACTIVE_HIGH>
-        ;
-};
