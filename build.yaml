@@ -3,13 +3,13 @@ include:
     # shield: tdtsk_central
   # - board: seeeduino_xiao_ble
     # shield: tdtsk_trackball
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: totem_trackball
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: totem_dongle
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: totem_left
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: totem_right
