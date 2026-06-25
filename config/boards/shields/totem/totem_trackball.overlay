@@ -36,8 +36,8 @@
 
     kscan1: kscan1 {
         compatible = "zmk,kscan-gpio-direct";
-        input-gpios = <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        status = "okay";
+        input-gpios = <&xiao_d 3 GPIO_ACTIVE_LOW GPIO_PULL_UP>;
+		status = "okay";
     };
 
     default_transform: matrix_transform {
