@@ -1,6 +1,7 @@
 #include "totem.dtsi"
 #include <input/processors.dtsi>
 #include "input-split.dtsi"
+#include "totem-layouts.dtsi"
 
 &trackball_split_listener {
 	status = "okay";
